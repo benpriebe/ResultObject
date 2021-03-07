@@ -1,15 +1,15 @@
 # ResultObject
 
-**ResultObject is a lightweight .NET Core library developed to solve a common problem. It returns an object indicating success or failure of an operation instead of throwing/using exceptions.**
+ResultObject is a lightweight .NET Core library developed to solve a common problem. It returns an object indicating success or failure of an operation instead of throwing/using exceptions.
 
 ## Key Features
 
 - **Generalised container** which works in all contexts (ASP.NET MVC/WebApi, DDD Domain Model, etc)
 - Store **multiple messages (info, warnings, errors, validation errors)** in one Result object
 - Create **localised, tokenised messages** instead of only messages in string format
-- Comes with fluent validator to validate most primitive types and generate localised messages  
-- Use Http extensions to map `Result` objects to Http `IActionResults`
-- Serialise localised messages with configurable metadata to allow clients to provide custom localised messages
+- Comes with **fluent validator** to validate most primitive types and generate localised messages  
+- Use **Http extensions to map `Result` objects to Http `IActionResults`**
+- Serialise **localised messages with configurable metadata** to allow clients control over custom localised messages
 
 ## Why Results instead of exceptions
 
