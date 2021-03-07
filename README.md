@@ -324,4 +324,4 @@ Thanks to all the contributors and to all the people who gave feedback!
 
 ## License
 
-See [LICENSE](https://raw.githubusercontent.com/benpriebe/ResultObject/master/LICENSE) for details. 
+This code is subject to the Unlicense license - See [LICENSE](https://raw.githubusercontent.com/benpriebe/ResultObject/master/LICENSE) for details. 
