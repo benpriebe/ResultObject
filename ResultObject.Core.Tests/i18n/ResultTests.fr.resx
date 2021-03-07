@@ -117,13 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NotFound" xml:space="preserve">
-    <value>El tipo "{type}" con el identificador "{id}" no existe.</value>
-  <comment>#The type "{type}" with identifier "{id}" does not exist.</comment></data>
-  <data name="Unauthorized" xml:space="preserve">
-    <value>La operación requiere autorización.</value>
-  <comment>#The operation requires authorization.</comment></data>
-  <data name="Forbidden" xml:space="preserve">
-    <value>La operación está prohibida.</value>
-    <comment>#The operation is forbidden.</comment></data>
+  <data name="Message_Test" xml:space="preserve">
+    <value>La testa message with numero: {number:F5} oh oh oh!</value>
+  </data>
 </root>

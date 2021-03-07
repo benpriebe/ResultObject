@@ -12,15 +12,15 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="MsgKeyError" xml:space="preserve">
-        <value>This is a spanish error message.</value>
+        <value>This is a French error message.</value>
     </data>
     <data name="MsgKeyInfo" xml:space="preserve">
-        <value>This parameter "{type}" is crazy in spanish.</value>
+        <value>This parameter "{type}" is crazy in French.</value>
     </data>
     <data name="MsgKeyWarning" xml:space="preserve">
-        <value>This is a warning message. la cuenta!</value>
+        <value>This is a warning message in French.</value>
     </data>
     <data name="MsgKeyValidationError" xml:space="preserve">
-        <value>El spanio gmail.com - {email}</value>
+        <value>La French gmail.com - {email}</value>
     </data>
 </root>

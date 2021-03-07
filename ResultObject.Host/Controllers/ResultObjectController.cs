@@ -73,7 +73,7 @@ namespace ResultObject.Host.Controllers
         }
 
         [HttpGet("forbidden")]
-        [ProducesResponseType(typeof(Result), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(Result), StatusCodes.Status403Forbidden)]
         public IActionResult GetForbidden()
         {
             Result result = Result.Failure().Forbidden();
@@ -82,11 +82,10 @@ namespace ResultObject.Host.Controllers
         }
 
         [HttpGet("unauthorised")]
-        [ProducesResponseType(typeof(Result), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(Result), StatusCodes.Status401Unauthorized)]
         public IActionResult GetUnauthorised()
         {
             Result result = Result.Failure().Unauthorized();
-
             logger.LogInformation(result.GetInvariantMessages());
             return result.ActionResult();        
         }

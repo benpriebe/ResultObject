@@ -1,7 +1,10 @@
 using System;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
 
+[assembly: InternalsVisibleTo("ResultObject.Core.Http")]
+[assembly: InternalsVisibleTo("ResultObject.Core.Tests")]
 namespace ResultObject.Core
 {
     public abstract class ResultBase
@@ -32,7 +35,7 @@ namespace ResultObject.Core
         /// </summary>
         [JsonIgnore]
         public bool IsUnauthorized => HasMessageWithType(MessageType.Unauthorized);
-
+        
         /// <summary>
         /// Does the result have any messages of the <see cref="MessageType.Forbidden" />?
         /// </summary>
@@ -52,10 +55,22 @@ namespace ResultObject.Core
         public bool HasInformationMessages => HasMessageWithType(MessageType.Information);
 
         /// <summary>
+        /// Get all <see cref="MessageType.Information"/> Messages on the result.
+        /// </summary>
+        [JsonIgnore]
+        public Message[] InformationMessages => GetMessages(MessageType.Information);
+        
+        /// <summary>
         /// Does the result have any messages of the <see cref="MessageType.Warning" />?
         /// </summary>
         [JsonIgnore]
         public bool HasWarnings => HasMessageWithType(MessageType.Warning);
+
+        /// <summary>
+        /// Get all <see cref="MessageType.Warning"/> Messages on the result.
+        /// </summary>
+        [JsonIgnore]
+        public Message[] WarningMessages => GetMessages(MessageType.Warning);
 
         /// <summary>
         /// Does the result have any messages of the <see cref="MessageType.Error" />?
@@ -64,11 +79,23 @@ namespace ResultObject.Core
         public bool HasErrors => HasMessageWithType(MessageType.Error);
 
         /// <summary>
+        /// Get all <see cref="MessageType.Error"/> Messages on the result.
+        /// </summary>
+        [JsonIgnore]
+        public Message[] ErrorMessages => GetMessages(MessageType.Error);
+
+        /// <summary>
         /// Does the result have any messages of the <see cref="MessageType.ValidationError" />?
         /// </summary>
         [JsonIgnore]
         public bool HasValidationErrors => HasMessageWithType(MessageType.ValidationError);
 
+        /// <summary>
+        /// Get all <see cref="MessageType.ValidationError"/> Messages on the result.
+        /// </summary>
+        [JsonIgnore]
+        public Message[] ValidationErrors => GetMessages(MessageType.ValidationError);
+        
         /// <summary>
         /// Formats both the <see cref="LogMessages" /> and the untranslated <see cref="Messages" /> as a single string,
         /// using the nominated delimiter to separate each message. If no delimiter is provided,
@@ -90,5 +117,11 @@ namespace ResultObject.Core
         {
             return Messages != null && Messages.Any(message => message.Type.Equals(messageType));
         }
+
+        private Message[] GetMessages(MessageType messageType)
+        {
+            return Messages?.Where(message => message.Type.Equals(MessageType.Information)).ToArray();
+        }
+
     }
 }

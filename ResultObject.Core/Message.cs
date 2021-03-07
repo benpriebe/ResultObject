@@ -9,7 +9,6 @@ using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-[assembly: InternalsVisibleTo("ResultObject.Core.Http")]
 namespace ResultObject.Core
 {
     public class Message
@@ -130,7 +129,7 @@ namespace ResultObject.Core
         /// <param name="template">the named token string</param>
         /// <param name="tokens">the token object</param>
         /// <returns>the interpolated string</returns>
-        private static string Format(string template, object tokens)
+        internal static string Format(string template, object tokens)
         {
             if (tokens == null) return template;
             var propertyInfos = tokens.GetType().GetProperties();

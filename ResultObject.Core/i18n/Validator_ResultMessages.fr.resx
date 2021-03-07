@@ -118,69 +118,69 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Message_Collection_Empty" xml:space="preserve">
-    <value>La colección "{collectionName}" debe contener al menos un valor.</value>
+    <value>La collection "{collectionName}" doit contenir au moins une valeur.</value>
   <comment>#The "{collectionName}" collection must contain at least one value.</comment></data>
   <data name="Message_CreditCard_Invalid" xml:space="preserve">
-    <value>El campo "{propertyName}" no es un número de tarjeta de crédito válido.</value>
+    <value>Le champ "{propertyName}" n'est pas un numéro de carte de crédit valide.</value>
   <comment>#The "{propertyName}" field is not a valid credit card number.</comment></data>
   <data name="Message_EmailAddress_Invalid" xml:space="preserve">
-    <value>El campo "{propertyName}" no es una dirección válida de correo electrónico.</value>
+    <value>Le champ "{propertyName}" n'est pas une adresse e-mail valide.</value>
   <comment>#The "{propertyName}" field is not a valid e-mail address.</comment></data>
   <data name="Message_FileExtensions_NotSupported" xml:space="preserve">
-    <value>El campo "{propertyName}" solo acepta archivos con las siguientes extensiones: "{fileExtensions}".</value>
+    <value>Le champ "{propertyName}" accepte uniquement les fichiers avec les extensions suivantes - "{fileExtensions}".</value>
   <comment>#The "{propertyName}" field only accepts files with the following extensions - "{fileExtensions}".</comment></data>
   <data name="Message_MaxLength_Exceeded" xml:space="preserve">
-    <value>El campo "{propertyName}" debe ser una cadena o tipo de matriz con una longitud máxima de {maxLength}.</value>
+    <value>Le champ "{propertyName}" doit être une chaîne ou un type de tableau d'une longueur maximale de {maxLength}.</value>
   <comment>#The field "{propertyName}" must be a string or array type with a maximum length of {maxLength}.</comment></data>
   <data name="Message_MaxStringLength_Exceeded" xml:space="preserve">
-    <value>El campo "{propertyName}" debe ser una cadena con una longitud máxima de {maxLength}.</value>
+    <value>Le champ "{propertyName}" doit être une chaîne avec une longueur maximale de {maxLength}.</value>
   <comment>#The field "{propertyName}" must be a string with a maximum length of {maxLength}.</comment></data>
   <data name="Message_Object_Required" xml:space="preserve">
-    <value>El objeto "{objectName}" es obligatorio.</value>
+    <value>L'objet "{objectName}" est requis.</value>
   <comment>#The "{objectName}" object is required.</comment></data>
   <data name="Message_Phone_Invalid" xml:space="preserve">
-    <value>El campo "{propertyName}" no es un número de teléfono válido.</value>
+    <value>Le champ "{propertyName}" n'est pas un numéro de téléphone valide.</value>
   <comment>#The "{propertyName}" field is not a valid phone number.</comment></data>
   <data name="Message_Property_Required" xml:space="preserve">
-    <value>El campo "{propertyName}" es obligatorio.</value>
+    <value>Le champ "{propertyName}" est requis.</value>
   <comment>#The "{propertyName}" field is required.</comment></data>
   <data name="Message_Range_Violation" xml:space="preserve">
-    <value>El campo "{propertyName}" debe estar entre {min} y {max}.</value>
+    <value>Le champ "{propertyName}" doit être compris entre {min} et {max}.</value>
   <comment>#The field "{propertyName}" must be between {min} and {max}.</comment></data>
   <data name="Message_Regex_NoMatch" xml:space="preserve">
-    <value>El campo "{propertyName}" debe coincidir con la expresión regular "{regex}".</value>
+    <value>Le champ "{propertyName}" doit correspondre à l'expression régulière "{regex}".</value>
   <comment>#The field "{propertyName}" must match the regular expression "{regex}".</comment></data>
   <data name="Message_StringLengthRange_Violation" xml:space="preserve">
-    <value>El campo "{propertyName}" debe ser una cadena con una longitud mínima de {minLength} y una longitud máxima de {maxLength}.</value>
+    <value>Le champ "{propertyName}" doit être une chaîne avec une longueur minimale de {minLength} et une longueur maximale de {maxLength}.</value>
   <comment>#The field "{propertyName}" must be a string with a minimum length of {minLength} and a maximum length of {maxLength}.</comment></data>
   <data name="Message_Url_Invalid" xml:space="preserve">
-    <value>El campo "{propertyName}" no es una URL http, https o ftp totalmente válida y calificada.</value>
+    <value>Le champ "{propertyName}" n'est pas un http, https ou ftp URL qualifié complet.</value>
   <comment>#The "{propertyName}" field is not a valid fully-qualified http, https, or ftp url.</comment></data>
   <data name="Message_Value_NotGreaterThan" xml:space="preserve">
-    <value>El campo "{propertyNameOne}" debe ser mayor que el campo "{propertyNameTwo}".</value>
+    <value>Le champ "{propertyNameOne}" doit être supérieur au champ "{propertyNameTwo}".</value>
   <comment>#The "{propertyNameOne}" field must be greater than the "{propertyNameTwo}" field.</comment></data>
   <data name="Message_Value_NotGreaterThanOrEqual" xml:space="preserve">
-    <value>El campo "{propertyNameOne}" debe ser mayor o igual que el campo "{propertyNameTwo}".</value>
+    <value>Le champ "{propertyNameOne}" doit être supérieur ou égal au champ "{propertyNameTwo}".</value>
   <comment>#The "{propertyNameOne}" field must be greater than or equal to the "{propertyNameTwo}" field.</comment></data>
   <data name="Message_Value_NotSet" xml:space="preserve">
-    <value>"{propertyValue}" no es un valor válido para el campo "{propertyName}".</value>
+    <value>"{propertyValue}" n'est pas une valeur valide pour le champ "{propertyName}".</value>
   <comment>#"{propertyValue}" is not a valid value for "{propertyName}" field.</comment></data>
   <data name="Message_Collection_NotEnoughValues" xml:space="preserve">
-    <value>La colección "{collectionName}" debe contener al menos {count} valor (es).</value>
+    <value>La collection "{collectionName}" doit contenir au moins {count} valeur (s).</value>
   <comment>#The "{collectionName}" collection must contain at least {count} value(s).</comment></data>
   <data name="Message_Collection_TooManyValues" xml:space="preserve">
-    <value>La colección "{collectionName}" no puede contener más de {count} valor (es).</value>
+    <value>La collection "{collectionName}" ne peut pas contenir plus de {count} valeur (s).</value>
   <comment>#The "{collectionName}" collection cannot contain more than {count} value(s).</comment></data>
   <data name="Message_Value_Invalid" xml:space="preserve">
-    <value>El campo "{propertyName}" no es válido.</value>
+    <value>Le champ "{propertyName}" n'est pas valide.</value>
   <comment>#The "{propertyName}" field is not valid.</comment></data>
   <data name="Message_Value_NotGreaterThanOrEqualToValue" xml:space="preserve">
-    <value>El campo "{propertyName}" debe ser mayor o igual que {value}.</value>
+    <value>Le champ "{propertyName}" doit être supérieur ou égal à {value}.</value>
   <comment>#The "{propertyName}" field must be greater than or equal to {value}.</comment></data>
   <data name="Message_Value_NotGreaterThanValue" xml:space="preserve">
-    <value>El campo "{propertyName}" debe ser mayor que {value}.</value>
+    <value>Le champ "{propertyName}" doit être supérieur à {value}.</value>
   <comment>#The "{propertyName}" field must be greater than {value}.</comment></data>
   <data name="Message_MinStringLength_Violation" xml:space="preserve">
-    <value>El campo "{propertyName}" debe ser una cadena con una longitud mínima de {minLength}.</value>
+    <value>Le champ "{propertyName}" doit être une chaîne avec une longueur minimale de {minLength}.</value>
   <comment>#The field "{propertyName}" must be a string with a minimum length of {minLength}.</comment></data>
 </root>
