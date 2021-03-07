@@ -189,7 +189,7 @@ var errors = result.HasWarnings());
 
 var errors = result.HasErrors();
 
-var errors = result.HasValidationErrors;
+var errors = result.HasValidationErrors();
 ```
 
 You can gain further control on handling an error by bundling the failure with a check for the presence of a message type.
@@ -300,9 +300,9 @@ Example when all properties are set to be serialized:
 
 When all properties are serialized the client has complete control on how to handle individual messages. 
 
-### Asserting ResultObject 
+### Testing
 
-todo: bring across the unit testing stuff for validators/results and document it up
+TODO: Show examples of how to test code using `Result` objects.
 
 ## Interesting Resources about Result Pattern
 
