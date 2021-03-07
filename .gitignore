@@ -1,0 +1,46 @@
+# DB files
+*.bak
+*.bak.ldf
+*.bak.mdf
+
+################### Cherry-picked from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.log
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+dist/
+[Bb]in/
+[Oo]bj/
+*/publish
+*/[Bb]in 
+*/[Oo]bj
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+#WebStorm
+.idea/
+
+#VSCode
+.vscode/
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

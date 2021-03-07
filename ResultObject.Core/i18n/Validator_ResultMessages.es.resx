@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Message_Collection_Empty" xml:space="preserve">
+    <value>La colección "{collectionName}" debe contener al menos un valor.</value>
+  <comment>#The "{collectionName}" collection must contain at least one value.</comment></data>
+  <data name="Message_CreditCard_Invalid" xml:space="preserve">
+    <value>El campo "{propertyName}" no es un número de tarjeta de crédito válido.</value>
+  <comment>#The "{propertyName}" field is not a valid credit card number.</comment></data>
+  <data name="Message_EmailAddress_Invalid" xml:space="preserve">
+    <value>El campo "{propertyName}" no es una dirección válida de correo electrónico.</value>
+  <comment>#The "{propertyName}" field is not a valid e-mail address.</comment></data>
+  <data name="Message_FileExtensions_NotSupported" xml:space="preserve">
+    <value>El campo "{propertyName}" solo acepta archivos con las siguientes extensiones: "{fileExtensions}".</value>
+  <comment>#The "{propertyName}" field only accepts files with the following extensions - "{fileExtensions}".</comment></data>
+  <data name="Message_MaxLength_Exceeded" xml:space="preserve">
+    <value>El campo "{propertyName}" debe ser una cadena o tipo de matriz con una longitud máxima de {maxLength}.</value>
+  <comment>#The field "{propertyName}" must be a string or array type with a maximum length of {maxLength}.</comment></data>
+  <data name="Message_MaxStringLength_Exceeded" xml:space="preserve">
+    <value>El campo "{propertyName}" debe ser una cadena con una longitud máxima de {maxLength}.</value>
+  <comment>#The field "{propertyName}" must be a string with a maximum length of {maxLength}.</comment></data>
+  <data name="Message_Object_Required" xml:space="preserve">
+    <value>El objeto "{objectName}" es obligatorio.</value>
+  <comment>#The "{objectName}" object is required.</comment></data>
+  <data name="Message_Phone_Invalid" xml:space="preserve">
+    <value>El campo "{propertyName}" no es un número de teléfono válido.</value>
+  <comment>#The "{propertyName}" field is not a valid phone number.</comment></data>
+  <data name="Message_Property_Required" xml:space="preserve">
+    <value>El campo "{propertyName}" es obligatorio.</value>
+  <comment>#The "{propertyName}" field is required.</comment></data>
+  <data name="Message_Range_Violation" xml:space="preserve">
+    <value>El campo "{propertyName}" debe estar entre {min} y {max}.</value>
+  <comment>#The field "{propertyName}" must be between {min} and {max}.</comment></data>
+  <data name="Message_Regex_NoMatch" xml:space="preserve">
+    <value>El campo "{propertyName}" debe coincidir con la expresión regular "{regex}".</value>
+  <comment>#The field "{propertyName}" must match the regular expression "{regex}".</comment></data>
+  <data name="Message_StringLengthRange_Violation" xml:space="preserve">
+    <value>El campo "{propertyName}" debe ser una cadena con una longitud mínima de {minLength} y una longitud máxima de {maxLength}.</value>
+  <comment>#The field "{propertyName}" must be a string with a minimum length of {minLength} and a maximum length of {maxLength}.</comment></data>
+  <data name="Message_Url_Invalid" xml:space="preserve">
+    <value>El campo "{propertyName}" no es una URL http, https o ftp totalmente válida y calificada.</value>
+  <comment>#The "{propertyName}" field is not a valid fully-qualified http, https, or ftp url.</comment></data>
+  <data name="Message_Value_NotGreaterThan" xml:space="preserve">
+    <value>El campo "{propertyNameOne}" debe ser mayor que el campo "{propertyNameTwo}".</value>
+  <comment>#The "{propertyNameOne}" field must be greater than the "{propertyNameTwo}" field.</comment></data>
+  <data name="Message_Value_NotGreaterThanOrEqual" xml:space="preserve">
+    <value>El campo "{propertyNameOne}" debe ser mayor o igual que el campo "{propertyNameTwo}".</value>
+  <comment>#The "{propertyNameOne}" field must be greater than or equal to the "{propertyNameTwo}" field.</comment></data>
+  <data name="Message_Value_NotSet" xml:space="preserve">
+    <value>"{propertyValue}" no es un valor válido para el campo "{propertyName}".</value>
+  <comment>#"{propertyValue}" is not a valid value for "{propertyName}" field.</comment></data>
+  <data name="Message_Collection_NotEnoughValues" xml:space="preserve">
+    <value>La colección "{collectionName}" debe contener al menos {count} valor (es).</value>
+  <comment>#The "{collectionName}" collection must contain at least {count} value(s).</comment></data>
+  <data name="Message_Collection_TooManyValues" xml:space="preserve">
+    <value>La colección "{collectionName}" no puede contener más de {count} valor (es).</value>
+  <comment>#The "{collectionName}" collection cannot contain more than {count} value(s).</comment></data>
+  <data name="Message_Value_Invalid" xml:space="preserve">
+    <value>El campo "{propertyName}" no es válido.</value>
+  <comment>#The "{propertyName}" field is not valid.</comment></data>
+  <data name="Message_Value_NotGreaterThanOrEqualToValue" xml:space="preserve">
+    <value>El campo "{propertyName}" debe ser mayor o igual que {value}.</value>
+  <comment>#The "{propertyName}" field must be greater than or equal to {value}.</comment></data>
+  <data name="Message_Value_NotGreaterThanValue" xml:space="preserve">
+    <value>El campo "{propertyName}" debe ser mayor que {value}.</value>
+  <comment>#The "{propertyName}" field must be greater than {value}.</comment></data>
+  <data name="Message_MinStringLength_Violation" xml:space="preserve">
+    <value>El campo "{propertyName}" debe ser una cadena con una longitud mínima de {minLength}.</value>
+  <comment>#The field "{propertyName}" must be a string with a minimum length of {minLength}.</comment></data>
+</root>

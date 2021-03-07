@@ -1,0 +1,26 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="MsgKeyError" xml:space="preserve">
+        <value>This is a spanish error message.</value>
+    </data>
+    <data name="MsgKeyInfo" xml:space="preserve">
+        <value>This parameter "{type}" is crazy in spanish.</value>
+    </data>
+    <data name="MsgKeyWarning" xml:space="preserve">
+        <value>This is a warning message. la cuenta!</value>
+    </data>
+    <data name="MsgKeyValidationError" xml:space="preserve">
+        <value>El spanio gmail.com - {email}</value>
+    </data>
+</root>
