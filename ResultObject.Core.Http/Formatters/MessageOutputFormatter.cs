@@ -52,7 +52,7 @@ namespace ResultObject.Core.Http.Formatters
                 LanguageCode = Result.MessageLevelOptions.Value.LanguageCode ? msg.LanguageCode : null,
             }).ToArray();
 
-            var response = JsonSerializer.Serialize(result, jsonSerializerOptions);
+            var response = JsonSerializer.Serialize(context.Object, jsonSerializerOptions);
             await httpContext.Response.WriteAsync(response, selectedEncoding);
         }
     }

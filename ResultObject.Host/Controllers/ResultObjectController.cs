@@ -30,6 +30,7 @@ namespace ResultObject.Host.Controllers
         public IActionResult GetNoContent()
         {
             Result result = Result.Success()
+                
                 .WithLogMessage("Log message")
                 .WithLogMessage("Another log message");
 
@@ -38,11 +39,11 @@ namespace ResultObject.Host.Controllers
         }
 
         [HttpGet("content")]
-        [ProducesResponseType(typeof(String), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Result<Response>), StatusCodes.Status200OK)]
         public IActionResult GetContent()
         {
-            Result<object> result = Result.Success<object>(new {name = "jimbo jones", mobile = "0400 123 123"})
-                .WithInfo<Resx>(nameof(Resx.MsgKeyInfo), new {type = "some dynamic juicy content just for you"})
+            Result<Response> result = Result.Success<Response>(new Response { Name = "jimbo jones", Mobile = "0400 123 123" })
+                .WithInfo<Resx>(nameof(Resx.MsgKeyInfo), new { type = "some dynamic juicy content just for you"})
                 .WithWarning<Resx>(nameof(Resx.MsgKeyWarning));
 
             logger.LogWarning(result.GetInvariantMessages());
@@ -128,4 +129,9 @@ namespace ResultObject.Host.Controllers
         public string[] Emails { get; set; }
     }
 
+    public class Response
+    {
+        public string Name { get; init; }
+        public string Mobile { get; init; }
+    }
 }

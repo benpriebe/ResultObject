@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Globalization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using System.Threading;
 using Resx = ResultObject.Core.Tests.i18n.ResultTests;
 
 namespace ResultObject.Core.Tests
@@ -8,10 +10,18 @@ namespace ResultObject.Core.Tests
     [TestClass]
     public class ResultTests
     {
-        [TestInitialize]
-        public void SetUp() {
+        [ClassInitialize]
+        public static void SetUp(TestContext testContext)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
         }
 
+        [ClassCleanup]
+        public static void Teardown()
+        {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+        }
+        
         #region Result Tests
 
         [TestMethod]

@@ -23,7 +23,7 @@ namespace ResultObject.Core.Http.Extensions
             {
                 return includeEnvelope 
                     ? new OkObjectResult(result) 
-                    : new ObjectResult(result.Value);
+                    : new OkObjectResult(result.Value);
             }
 
             return new NoContentResult();

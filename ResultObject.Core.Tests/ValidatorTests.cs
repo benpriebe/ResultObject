@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ResultObject.Core.Tests
@@ -10,6 +12,18 @@ namespace ResultObject.Core.Tests
     {
         private Validator _validator;
 
+        [ClassInitialize]
+        public static void SetUp(TestContext testContext)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+        }
+
+        [ClassCleanup]
+        public static void Teardown()
+        {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+        }
+        
         [TestInitialize]
         public void SetUp()
         {

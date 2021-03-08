@@ -43,7 +43,6 @@ namespace ResultObject.Core
             {
                 Thread.CurrentThread.CurrentUICulture = currentUiCulture;
             }
-
         }
     }
 }
